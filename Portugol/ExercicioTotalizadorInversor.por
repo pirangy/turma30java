@@ -21,7 +21,7 @@ programa
 		}
 		//ache o maior valor
 		 media = total / 5
-		 escreva("O total é ",total)
+		 escreva("O tot3al é ",total)
 		 escreva("\nA média é ",media)
 		 escreva("\nMaior valor digitado: ",maior)
 	}
@@ -31,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 252; 
+ * @POSICAO-CURSOR = 242; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
