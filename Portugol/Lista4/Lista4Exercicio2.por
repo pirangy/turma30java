@@ -10,13 +10,17 @@ programa
 	inclua biblioteca Util
 	funcao inicio()
 	{
-		inteiro lance[10]
+		inteiro posicaoDado[10]
+		real media
 
-		para(inteiro posicaoDado=0;posicaoDado < 7;posicaoDado++)
+		escreva("Os lances foram: \n")
+		para(inteiro lance=0;lance < 10;lance++)
 		{
-			posicaoDado[lance] = Util.sorteia(1, 5)
-			escreva("\nLance: ",lance,"\nPosição do Dado: ",posicaoDado[lance])
+			posicaoDado[lance] = Util.sorteia(1, 6)
+			escreva("\nLance: ",lance, " - ","Posição do Dado: ",posicaoDado[lance])
+			escreva("\n")
 		}
+		escreva("\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 461; 
+ * @POSICAO-CURSOR = 672; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {posicaoDado, 13, 10, 11};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
