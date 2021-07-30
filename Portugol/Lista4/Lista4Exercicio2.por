@@ -10,7 +10,7 @@ programa
 	inclua biblioteca Util
 	funcao inicio()
 	{
-		inteiro posicaoDado[10]
+		inteiro posicaoDado[10], soma
 		real media
 
 		escreva("Os lances foram: \n")
@@ -19,7 +19,9 @@ programa
 			posicaoDado[lance] = Util.sorteia(1, 6)
 			escreva("\nLance: ",lance, " - ","Posição do Dado: ",posicaoDado[lance])
 			escreva("\n")
+				
 		}
+		
 		escreva("\n")
 	}
 }
@@ -28,7 +30,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 672; 
+ * @POSICAO-CURSOR = 8; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {posicaoDado, 13, 10, 11};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
