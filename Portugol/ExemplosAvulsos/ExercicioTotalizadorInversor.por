@@ -3,12 +3,12 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro total=0
+		real total=0.00
 		inteiro numero=0
-		real media=0
+		real media=0.00
 		inteiro maior=0
 		
-		para(inteiro x=1; x<=5; x++){
+		para(inteiro x=1; x<6; x++){
 			//totalizador
 			escreva("Digite um numero: ")
 			leia(numero)
@@ -21,7 +21,7 @@ programa
 		}
 		//ache o maior valor
 		 media = total / 5
-		 escreva("O tot3al é ",total)
+		 escreva("O total é ",total)
 		 escreva("\nA média é ",media)
 		 escreva("\nMaior valor digitado: ",maior)
 	}
@@ -31,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 242; 
+ * @POSICAO-CURSOR = 50; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
