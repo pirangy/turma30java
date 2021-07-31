@@ -1,0 +1,64 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia produto[10]
+		real valor[10]  //mat-1
+		inteiro estoque[10] //todo mundo com 1
+		cadeia codigo[10]
+
+		codigo[0] = "G5 - 1"
+		codigo[1] = "G5 - 2"
+		codigo[2] = "G5 - 3"
+		codigo[3] = "G5 - 4"
+		codigo[4] = "G5 - 5"
+		codigo[5] = "G5 - 6"
+		codigo[6] = "G5 - 7"
+		codigo[7] = "G5 - 8"
+		codigo[8] = "G5 - 9"
+		codigo[9] = "G5 - 10"
+
+		produto[0] = "RODO"
+		produto[1] = "VASSOURA"
+		produto[2] = "ROBO ASPIRADOR"
+		produto[3] = "ASPIRADOR DE PÓ"
+		produto[4] = "LIXEIRA DE COZINHA"
+		produto[5] = "RODO MAGICO"
+		produto[6] = "PÁ DE LIXO"
+		produto[7] = "TAPETINHO DE PIA"
+		produto[8] = "SACOLA DE LIXO"
+		produto[9] = "PORTA-DETERGENTE"
+
+		valor[0] = 20.00
+		valor[1] = 10.00
+		valor[2] = 250.00
+		valor[3] = 150.00
+		valor[4] = 15.00
+		valor[5] = 55.00
+		valor[6] = 5.00
+		valor[7] = 22.00
+		valor[8] = 12.00
+		valor[9] = 18.00
+
+		estoque[0] = 10
+		estoque[1] = 10
+		estoque[2] = 10
+		estoque[3] = 10
+		estoque[4] = 10
+		estoque[5] = 10
+		estoque[6] = 10
+		estoque[7] = 10
+		estoque[8] = 10
+		estoque[9] = 10
+
+
+		escreva("RELAÇÃO DE PRODUTOS\n")
+		escreva("----------------------------------------------------------------------------------------------------------\n")
+		escreva("COD\t\tPRODUTO\t\t\t\tVALOR R$\t\t\tESTOQUE\n")
+		escreva("----------------------------------------------------------------------------------------------------------\n")
+		para (inteiro x=0; x<10; x++){
+			escreva(codigo[x],"\t\t",produto[x],"\t\t\t\t",valor[x],"\t\t\t",estoque[x],"\n")
+		}
+		
+	}

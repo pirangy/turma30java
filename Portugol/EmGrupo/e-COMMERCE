@@ -1,0 +1,44 @@
+programa
+{
+	
+	funcao inicio()
+{
+	inteiro codigo[10],carrinho[10],estoque[10]
+	cadeia produto[10]
+	real valor[10]
+	
+	
+
+	
+	valor[0] = 20.00
+	valor[1] = 10.00
+	valor[2] = 250.00
+	valor[3] = 150.00
+	valor[4] = 15.00
+	valor[5] = 55.00
+	valor[6] = 5.00
+	valor[7] = 22.00
+	valor[8] = 12.00
+	valor[9] = 18.00
+
+	
+	produto[0] = "rodo"
+	produto[1] =  "vassoura"
+	produto[2] = "robo faxineiro"
+	produto[3] = "aspirador de pó"
+	produto[4] = "lixeira"
+	produto[5] = "rodo magico"
+	produto[6] = "pá"
+	produto[7] = "tapete de pia"
+	produto[8] = "sacola de lixo"
+	produto[9] = "porta detergente" 
+
+	
+
+
+	para(inteiro x=0; x<10; x++)
+	codigo[x] = "G - "+(x+1)
+	estoque[x] = 10
+	escreva ("O produto é",produto)
+	}
+}

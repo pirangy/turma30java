@@ -1,0 +1,116 @@
+programa
+{
+	funcao inicio()
+	{
+		cadeia produto[10], codigo[10]
+		inteiro estoque[10]
+		real valor[10]
+
+		produto[0] = "RODO DE PIA"
+		produto[1] = "VASSOURA"
+		produto[2] = "ROBÔ ASPIRADOR" 
+		produto[3] = "ASPIRADOR DE PÓ"
+		produto[4] = "LIXEIRA NAMASTE"
+		produto[5] = "RODO MÁGICO"
+		produto[6] = "PÁ DE LIXO"
+		produto[7] = "TAPETE DE PIA"
+		produto[8] = "SACOLA DE LIXO"
+		produto[9] = "ESFREGÃO"
+
+		valor[0] = 20.00
+		valor[1] = 10.00
+		valor[2] = 250.00
+		valor[3] = 150.00
+		valor[4] = 15.00
+		valor[5] = 55.00
+		valor[6] = 5.00
+		valor[7] = 22.00
+		valor[8] = 12.00
+		valor[9] = 18.00
+
+
+		cadeia auxCodigo
+		caracter decisao
+		real valorParcela
+		inteiro x=0, quantidade
+		
+		para (x=0;x<10; x++)
+		{
+			codigo[x] = "G5-"+(x+1)
+			valor[x] = valor[x]
+			estoque[x]=10
+		}
+
+		escreva("NOME DA LOJA\t'SLOGAN'\n")
+		escreva("\nCÓDIGO\tPRODUTO\t\tVALOR\tESTOQUE\n")
+		escreva("----------------------------------------\n")
+
+		
+		para(x=0;x<10;x++)
+		{
+			escreva(codigo[x],"\t",produto[x],"\t",valor[x],"\t",estoque[x],"\n")		
+		}
+
+		
+		escreva("\nInforme o código do produto: ")
+		leia(auxCodigo)
+
+		para (x=0;x<10;x++)
+		{
+			se (auxCodigo == codigo[x])
+			{
+				escreva("\nCÓDIGO\tPRODUTO\t\tVALOR\tESTOQUE\n")
+				escreva(codigo[x],"\t",produto[x],"\t",valor[x],"\t",estoque[x],"\n")
+				escreva("Digite quantas unidades você deseja: ")
+				leia(quantidade)
+					se (quantidade>estoque[x])
+						{
+							escreva("Quantidade indisponível.")
+							
+						} senao {
+							
+							//Carrinho
+							//escreva("Deseja adicionar outros itens?")
+							//leia(carrinho)
+							
+							escreva("Deseja finalizar a compra? [S/N]:")
+							leia(decisao)
+							
+							se (decisao=='S' ou decisao=='s')
+									{
+										para(inteiro op=1; op<4; op++)
+										{
+											escreva("\nEscolha a forma de pagamento:\nOpção 1: À vista (10% de desconto)\nOpção 2: Cartão (10% de acréscimo)\nOpção 3: Duas parcelas (15% de acréscimo)\n")
+											leia(op)
+												se (op==1)
+												{
+													valor[x]=(valor[x]*quantidade)-((valor[x]*quantidade)*0.10)
+													escreva("O valor final é: ",valor[x]," + ICMS (9%) de ",(valor[x]*0.09))
+													pare
+												}
+												se (op==2)
+												{
+													valor[x]=(valor[x]*quantidade)+((valor[x]*quantidade)*0.10)
+													escreva("O valor final é: ",valor[x]," + ICMS (9%) de ",(valor[x]*0.09))
+													pare
+												}
+												se (op==3)
+												{
+													valor[x]=((valor[x]*quantidade)+((valor[x]*quantidade)*0.15))/2
+													escreva("O valor de cada parcela é: ",valor[x]," + ICMS (9%) de ",(valor[x]*0.09))
+													pare
+												}
+										}
+										
+									}	
+				
+								}		
+								
+			}
+
+			
+			
+		}
+						
+	}
+}

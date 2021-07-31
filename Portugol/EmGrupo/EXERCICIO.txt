@@ -1,0 +1,70 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia alune[4]
+		cadeia matricula[4]  //mat-1
+		inteiro nota[10] //todo mundo com 1
+		cadeia codigo[10]
+		real valor [10]
+		inteiro estoque [10]
+		
+
+		alune[0] = "MARCOS"
+		alune[1] = "MARIA"
+		alune[2] = "PEDRO"
+		alune[3] = "SARA"
+
+		cadeia produto[10] 
+		inteiro auxNota = 0
+		inteiro x=0
+		
+		
+		escreva("SELECIONE O CODIGO DO PRODUTO: __ :")
+		leia (codigo[x])
+		
+		escreva("\tCODIGO: ",codigo[x], "\tPRODUTO: ", produto[x],"\tVALOR: ", valor[x],"\tESTOQUE: ",estoque[x])
+		
+		
+		
+
+		
+	/*	para (x=0;x<10; x++){
+			matricula[x] = "MAT-"+(x+1)
+			nota[x] = 10
+		}
+
+		
+		para (x=0; x<10; x++){
+			escreva(matricula[x],"\t",alune[x],"\t\t",nota[x],"\n")
+		}
+		
+		para (x=0; x<10; x++){
+			se (produto[x] == matricula[x]){
+				escreva(matricula[x],"\t",alune[x],"\t\t",nota[x],"\n")
+				escreva("Digite a nova nota :")
+				leia(auxNota)
+				nota[x]= nota[x]+auxNota 
+				pare
+			} 
+			
+		}
+		
+		escreva("Alune selecionade : "+matricula[x]," ",alune[x],"\n")
+		escreva("NOVO BOLETIM \n")
+		escreva("MAT\tNOME\t\tPONTOS ATUAIS\n")
+		para (x=0; x<10; x++){
+			escreva(matricula[x],"\t",alune[x],"\t\t",nota[x],"\n")
+		}
+		
+		
+		
+		
+		
+		
+
+*/
+		
+	}
+}
