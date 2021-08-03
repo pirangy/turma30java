@@ -18,7 +18,16 @@ public class exercicio4 {
 		System.out.println("Digite o valor númerico: ");
 		n = leia.nextDouble();
 		
-		if(n%2==0) 
+		if(n<0)
+		{
+			System.out.println("O número é negativo. Reinicie o programa.");
+		}
+		else if (n==0) 
+		{
+			System.out.println("Número 0 é neutro. Reinicie o programa.");
+		}
+		
+		else if(n%2==0) 
 		{
 			System.out.println("O número é par. A raiz quadrada é: "+Math.sqrt(n)+".");
 		} else 
