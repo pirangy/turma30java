@@ -64,7 +64,7 @@ public class Lista1Exercicio6 {
 		System.out.println("Digite o valor y2: ");
 		y2 = leia.nextDouble();
 		
-		d=Math.sqrt((Math.pow((x2-x1),2)+Math.pow((y1-y2),2))); //modo direto, raiz quadrada
+		d=Math.sqrt((Math.pow((x2-x1),2)+Math.pow((y1-y2),2))); //modo direto, raiz quadrada9
 		
 		System.out.println("A distância é: "+d);
 		
