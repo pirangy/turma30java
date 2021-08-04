@@ -3,7 +3,7 @@
  * Se for par exiba também a raiz quadrada do mesmo; se for ímpar exiba o número elevado ao quadrado.
  */
 
-package Lista2;
+package listas.Lista2;
 
 import java.util.*;
 import java.math.*;

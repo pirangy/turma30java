@@ -1,10 +1,8 @@
+package exerciciosAvulsos;
 
 public class OiMundo 
 {
-/* programa {
- * 	funcao inicio (){
- * 		}
- * }*/
+	
 	public static void main (String[] args) 
 	{
 		

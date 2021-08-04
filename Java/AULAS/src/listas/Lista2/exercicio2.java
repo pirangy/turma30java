@@ -1,38 +1,40 @@
-/*
- * Faça um programa que entre com três números e coloque em ordem crescente.
-
- */
-
-package Lista2;
+package listas.Lista2;
 
 import java.util.*;
 public class exercicio2 {
 
-	public static void main(String[] args) 
-	{
-		Scanner leia = new Scanner (System.in);
-		int n1=0;
-		int n2=0;
-		int n3=0;
-		int m1=0;
-		int m2=0;
-		int m3=0;
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
 		
+		int numero1, numero2, numero3;
 		
 		System.out.println("Digite o primeiro número: ");
-		n1 = leia.nextInt();
+		numero1 = leia.nextInt();
 		System.out.println("Digite o segundo número: ");
-		n2 = leia.nextInt();
+		numero2 = leia.nextInt();
 		System.out.println("Digite o terceiro número: ");
-		n3 = leia.nextInt();
+		numero3 = leia.nextInt();
 		
-		if (n1<n2)
-		{
-			n2=m1;
-			
+		if(numero1 >= numero2 && numero1 >= numero3) {
+			if(numero2> numero3)
+				System.out.printf("%d é maior que %d que é maior que %d", numero1, numero2, numero3);
+				
+			else
+				System.out.printf("%d é maior que %d que é maior que %d", numero1, numero3, numero2);
 		}
-		
-		
+		else if(numero2 >= numero1 && numero2 >= numero3) {
+			if(numero1 > numero3)
+				System.out.printf("%d é maior que %d que é maior que %d", numero2, numero1, numero3);
+			else
+				System.out.printf("%d é maior que %d que é maior que %d", numero2, numero3, numero1);
+		}
+		else{
+			if(numero1> numero2)
+				System.out.printf("%d é maior que %d que é maior que %d", numero3, numero1, numero2);
+			else
+				System.out.printf("%d é maior que %d que é maior que %d", numero3, numero2, numero1);
+		}	
+				
 	}
 
 }

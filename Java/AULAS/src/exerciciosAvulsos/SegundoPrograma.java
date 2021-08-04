@@ -1,8 +1,7 @@
+package exerciciosAvulsos;
+
 import java.util.Scanner;
 
-/*
- * 
- */
 public class SegundoPrograma 
 {
 

@@ -1,29 +1,5 @@
-/*
- * programa
-{
-	
+package exerciciosAvulsos;
 
-	funcao inicio(){
-
-		
-		real temperaturaF
-		real temperaturaC
-
-		//entrada
-		escreva("Digite a temperatura em Celcius: ")
-		leia(temperaturaC)
-
-		temperaturaF = (temperaturaC * 1.8) + 32 
-
-		escreva("A temperatura em Fahrenheit é: "+ temperaturaF)
-		
-		
-		
-	}
-	
-
-}
- */
 import java.util.Locale;
 import java.util.Scanner;
 

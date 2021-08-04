@@ -2,7 +2,7 @@
  * Faça um programa que receba três inteiros e diga qual deles é o maior.
  */
 
-package Lista2;
+package listas.Lista2;
 
 import java.util.*;
 public class exercicio1 {
