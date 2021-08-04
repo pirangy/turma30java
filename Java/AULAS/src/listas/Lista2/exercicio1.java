@@ -26,17 +26,15 @@ public class exercicio1 {
 		{
 			maior=n1;
 			if(n2>maior)
-			{
-				maior=n2;	
-				if(n3>maior) 
-					{
-						maior=n3;
-					}
-			}
-		} 
+				maior=n2;
+			
+			if(n3>maior) 	
+				maior=n3;				
+					 
 			System.out.println("O maior número é: "+maior);
 		}
 	}
+}
 		
 	
 	
