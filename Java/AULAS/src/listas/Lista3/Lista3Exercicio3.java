@@ -1,7 +1,7 @@
 /*
- * Solicitar a idade de várias pessoas e imprimir: Total de pessoas com menos de 21 anos. 
- * Total de pessoas com mais de 50 anos. 
- * O programa termina quando idade for =-99. (WHILE)
+* 3. Solicitar a idade de várias pessoas e imprimir: Total de pessoas com menos de 21 anos.
+ *  Total de pessoas com mais de 50 anos. 
+ *  O programa termina quando idade for =-99.
  */
 
 package listas.Lista3;
@@ -18,35 +18,38 @@ public class Lista3Exercicio3 {
 		System.out.println("Digite a idade de uma pessoa:");
 		idade = leia.nextInt();
 		
-		while (idade != -99) 
+		while (idade != -99)
 		{
-			if (idade<=21)
-			{
-				menos21 = idade;
-				totalMenos21+=idade;
-				
-				if (idade>=50)
-				{	
-					mais50= idade;
-					totalMais50+=idade;
+			if (idade<21)
+				{
+					totalMenos21++;
+					totalMenos21+=menos21;				
+					
 				}
-				//System.out.printf("As idades menores que 21 anos foram: %d",totalMenos21);
-			}
 			
+			else if (idade>50)
+				{	
+					totalMais50++;
+					totalMais50+=mais50;
+				}
 			
-			if(idade==-99)
-			{
+			else 
+				{
 				
-				System.out.println("Programa finalizado.");
-							
-			}
-			
-			System.out.println("Digite a idade de uma pessoa:");
-			idade = leia.nextInt();
-			System.out.printf("As idades menores que 21 anos foram: %d\n",totalMenos21);
-
-		}
+					
+				
+				}	
 		
+			System.out.println("Digite a idade de uma pessoa: ");
+			idade = leia.nextInt();
+						
+		} 
+		
+		
+		System.out.printf("O total de idades menores que 21 anos é: %d\n",totalMenos21);
+		System.out.printf("O total de maiores que 50 anos é: %d\n",totalMais50);
+
+
 		
 	}
 

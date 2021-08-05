@@ -12,16 +12,16 @@ public class Lista3Exercicio1
 
 		public static void main(String[] args) 
 		{
-			int x, soma=0;
+			int numero;
 			
-			for (x=1000;x<=1999;x++)
+			for (numero=1000;numero<=1999;numero++) //para os números entre 1000 e até 1999...
 			{
-				if (x%11==5)
-				System.out.printf("\n %d",x);
+				if (numero%11==5) //... e, se quando dividirmos esses números por 11, obtivermos 5 de resto...
+				
+					System.out.printf("\n %d",numero); //imprima estes numeros.
 				
 			}
 			
-			//System.out.printf("\nSoma total: %d",soma);
 		}
 
 	}
