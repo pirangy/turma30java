@@ -10,7 +10,6 @@ public class Exercicio2 {
 
 	public static void main(String[] args) {
 
-		
 		Scanner leia = new Scanner(System.in);
 		
 		Aviao_2 aviao1 = new Aviao_2();

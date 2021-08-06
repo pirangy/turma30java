@@ -7,7 +7,7 @@ public class Funcionario_4 {
 	public String departamento;
 	public int anoEntrada;
 	
-	//Métodos da Classe Avião
+	//Métodos da Classe F
 	public void tempoCarreira(int anoAtual)
 	{
 		System.out.println("O tempo de carreira do funcionário é: "+(anoAtual-anoEntrada)+" anos.");

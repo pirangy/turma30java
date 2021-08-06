@@ -26,7 +26,7 @@ public class Exercicio4 {
 		funcionario1.anoEntrada=leia.nextInt();
 		
 		System.out.println("Nome: "+funcionario1.nome+"\nDepartamento: "+funcionario1.departamento);
-		funcionario1.tempoCarreira(2021);//execução do método "tempoCirculacao()", da classe Aviao_1, que imprime o tempo de cirulação do modelo
+		funcionario1.tempoCarreira(2021);//execução do método "tempoCarreira()", da classe Funcionario_4, que imprime o tempo de carreira do funcionário
 		
 		
 	}
