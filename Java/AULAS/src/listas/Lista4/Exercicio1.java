@@ -27,7 +27,7 @@ public class Exercicio1 {
 		
 		System.out.println("Nome: "+cliente1.nome+"\nCódigo: "+cliente1.codigo);
 		cliente1.idade(2021);//execução do método "idade()", da classe Clientes_1
-
+		
 			
 		
 	}
