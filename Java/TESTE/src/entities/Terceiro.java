@@ -28,6 +28,12 @@ public class Terceiro extends Funcionario {
 		return ((getHorasTrabalhadas()*getValorPorHora())+adicional);
 	}
 	
+	@Override
+	
+	public double salarioExtra () {
+		return 500;
+	}
+	
 	
 
 	
