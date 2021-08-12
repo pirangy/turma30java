@@ -55,7 +55,7 @@ public class Produto {
 	}
 
 	// Métodos
-	public void retirarEstoque(int quantidade) {
+	public void retiraEstoque(int quantidade) {
 		
 		if(quantidade>estoque) {
 			System.out.println("Quantidade indisponível.");
