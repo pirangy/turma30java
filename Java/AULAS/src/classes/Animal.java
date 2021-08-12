@@ -3,65 +3,55 @@ package classes;
 public class Animal {
 	
 	//Atributos
-	private char especie; //1-Cavalo, 2-Cachorro, 3-Preguiça
-	private String nome;
-	private int idade;
-	private String som;
-	private String acao;
-			
-	//Construtores
-	public Animal(String nome, int idade) {
-		super();
-		this.nome = nome;
-		this.idade = idade;
-	}
+		private String nome;
+		private int idade;
+		private boolean som;	
+		
+		//Construtor
+		public Animal(String nome, int idade, boolean som) {
+			super();
+			this.nome = nome;
+			this.idade = idade;
+			this.som = som;
+		}
 
-	public Animal(String acao) {
-		super();
-		this.acao = acao;
-	}
-	
-	
+		//encapsuladores
+		public String getNome() {
+			return nome;
+		}
 
-	public Animal(char especie, String nome, int idade, String som, String acao) {
-		super();
-		this.especie = especie;
-		this.nome = nome;
-		this.idade = idade;
-		this.som = som;
-		this.acao = acao;
-	}
+		public void setNome(String nome) {
+			this.nome = nome;
+		}
 
-	//Encapsulamento
-	
-	public String getNome() {
-		return nome;
-	}
+		public int getIdade() {
+			return idade;
+		}
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+		public void setIdade(int idade) {
+			this.idade = idade;
+		}
 
-	public int getIdade() {
-		return idade;
-	}
+		public boolean isSom() {
+			return som;
+		}
 
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}	
-
-
-	//Métodos
-	public void emitirSom(String som)
-	{
-		this.som=som;
-		System.out.println(som);
-	}
-	
-	public void realizarAcao(String acao)
-	{
-		this.acao=acao;
-		System.out.println(acao);
-	}
+		public void setSom(boolean som) {
+			this.som = som;
+		}
+		
+		public void correr(boolean corre) {
+			if(corre) {
+				System.out.println("Corre");
+			}
+			else {
+				System.out.println("Não corre");
+			}
+		}
+		
+		//Metodos
+		public void emiteSom() {
+			System.out.println("Emitindo som...");
+		}
 
 }

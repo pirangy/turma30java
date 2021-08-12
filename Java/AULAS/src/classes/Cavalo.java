@@ -1,16 +1,26 @@
 package classes;
 
-import classes.Animal;
-
 public class Cavalo extends Animal {
 
-	public static void main(String[] args) {
-		
-		Animal cavalo = new Animal("Marco", 8);
-		
-		System.out.println(cavalo.getNome()+"\n"+cavalo.getIdade());
-		cavalo.emitirSom("Iuuhr");
-		cavalo.realizarAcao("Corre");
+	private boolean correr;
+
+	public Cavalo(String nome, int idade, boolean som, boolean correr) {
+		super(nome, idade, som);
+		this.correr = correr;
+	}
+	
+	public void corre() {
+		if (correr) {
+			System.out.printf("\nCavalo está correndo!");
 		}
+		else {
+			System.out.printf("\nCavalo não está correndo...");
+		}
+	}
+	
+	@Override
+	public void emiteSom() {
+		System.out.println("\nIuhhhrr!");
+	}
 	
 }
