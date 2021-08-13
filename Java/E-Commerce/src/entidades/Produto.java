@@ -6,12 +6,19 @@ public class Produto {
 
 	Scanner leia = new Scanner(System.in);
 	// Atributos
+
 	private String codigo;
 	private String sabor;
 	private double preco;
 	private int estoque;
-
 	// Construtores
+
+	public Produto(String codigo, int estoque) {
+		super();
+		this.codigo = codigo;
+		this.estoque = estoque;
+	}
+
 	public Produto(String codigo, String sabor, double preco, int estoque) {
 		super();
 		this.codigo = codigo;
@@ -55,31 +62,34 @@ public class Produto {
 	}
 
 	// Métodos
-	public void retiraEstoque(int quantidade) {
-		
-		if(quantidade>estoque) {
-			System.out.println("Quantidade indisponível.");
-		} else {
-			this.estoque -= quantidade;
-			}
-		}
-		
+
 	public void compra(char op) {
-		if(op=='N') {
+		if (op == 'N') {
 			System.out.println("Volte sempre!");
-		} else if (op=='S') {
+		} else if (op == 'S') {
 			System.out.println("Digite o código do produto: ");
 			codigo = leia.next();
 		}
-					
-	
+
 	}
-	
-	public void incluirEstoque(int quantidade) {
-		if (quantidade<=0) {
-			System.out.println("Quantidade inválida.");
+
+	public boolean retirarEstoque(int quantidade) {
+		if (quantidade <= 0) {
+			return false;
+		} else if (quantidade > this.estoque) {
+			return false;
 		} else {
-			this.estoque += quantidade;
+			this.estoque -= quantidade;
+			return true;
 		}
 	}
+
+	public void incluiEstoque(int incremento) {
+		if (incremento <= 0) {
+			System.out.println("ADICIONE UM NUMERO POSITIVO");
+		} else {
+			this.estoque = this.estoque + incremento;
+		}
+	}
+
 }
