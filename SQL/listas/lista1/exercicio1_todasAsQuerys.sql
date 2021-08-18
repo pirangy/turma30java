@@ -16,7 +16,7 @@ CREATE TABLE tb_funcionaries (
 INSERT INTO tb_funcionaries (nome, cargo, departamento, salario) VALUES ("Ariel", "UX Designer", "T.I.", 4000);
 INSERT INTO tb_funcionaries (nome, cargo, departamento, salario) VALUES ("Débora", "UI Designer", "T.I.", 4000);
 INSERT INTO tb_funcionaries (nome, cargo, departamento, salario) VALUES ("Juliana", "Front-End Dev", "T.I.", 5000);
-INSERT INTO tb_funcionaries (nome, cargo, departamento, salario) VALUES ("Márcio", "Back-End Designer", "T.I.", 5000);
+INSERT INTO tb_funcionaries (nome, cargo, departamento, salario) VALUES ("Márcio", "Back-End Dev", "T.I.", 5000);
 INSERT INTO tb_funcionaries (nome, cargo, departamento, salario) VALUES ("Arthur", "Scrum Master", "T.I.", 5500);
 
 -- comandos para seleção
