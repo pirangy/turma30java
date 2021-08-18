@@ -9,7 +9,7 @@ CREATE TABLE tb_produtos (
     marca varchar (20) not null, -- atributo "marca" com not null (não aceita preenchimento vazio)
 	estoque bigint (10) not null, -- atributo "estoque" como bigint
 	
-    primary key (id_prod)
+    primary key (id_prod) -- atributo "id_prod" estabelecido como chave primária da tabela "tb_produtos"
 );
 
 -- comandos para popular tabela com até 8 dados (sem a necessidade de setar o atributo "id_prod", pois este foi definido com auto_increment)
