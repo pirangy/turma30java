@@ -16,7 +16,6 @@ CREATE TABLE tripulantes(
     nome varchar (50) not null,
     genero char (1)  not null check (genero in ('F', 'M', 'N')),
 	id_aviao int (11) not null, 
-    foreign key (id_aviao) references aviao(id_aviao),
     primary key (id_trip) ) engine=InnoDB;
     
 DESC tripulantes;
