@@ -4,20 +4,20 @@ USE db_pizzaria_legal; -- utiliza o banco de dados que foi criado
 -- criação de tabela Categoria
 CREATE TABLE tb_categoria(
 	
-    categoria_id int (5),
-    tipo varchar (50),
-    forma varchar (50),
+    categoria_id int (5) not null,
+    tipo varchar (50) not null,
+    forma varchar (50) not null,
     
     primary key (categoria_id)) engine=InnoDB;
 
 -- criação de tabela Pizza
 CREATE TABLE tb_pizza (
 
-	pizza_id int(5),
-    sabor varchar (50),
-	valor int (50),
-    borda varchar (50),
-    categoria_id int (5),
+	pizza_id int(5) not null,
+    sabor varchar (50) not null,
+	valor int (50) not null,
+    borda varchar (50) not null,
+    categoria_id int (5) not null,
 
 primary key (pizza_id),
 foreign key (categoria_id) references tb_categoria (categoria_id)) engine=InnoDB;

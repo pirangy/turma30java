@@ -4,9 +4,9 @@ USE db_farmacia_do_bem; -- utiliza o banco de dados para realizar as operações
 -- criação de tabela Categoria
 CREATE TABLE tb_categoria(
 
-	categoria_id int (5),
-    tipo varchar (50),
-    receita boolean,
+	categoria_id int (5) not null,
+    tipo varchar (50) not null,
+    receita boolean not null,
 
 	primary key (categoria_id)
 )engine=InnoDB;
@@ -14,16 +14,17 @@ CREATE TABLE tb_categoria(
 -- criação de tabela Produto
 CREATE TABLE tb_produto(
 	
-    produto_id int (5),
-    nome varchar (50),
-    marca varchar (50),
-    valor decimal (4,2),
-    categoria_id int,
-    receita boolean,
+    produto_id int (5) not null,
+    nome varchar (50) not null,
+    marca varchar (50) not null,
+    valor decimal (4,2) not null,
+    categoria_id int not null,
+    receita boolean not null,
 	
     primary key (produto_id),
     foreign key (categoria_id) references tb_categoria(categoria_id))engine=InnoDB;
-    
+  
+  
 -- popular tabela Categoria
 INSERT INTO tb_categoria VALUES (1,"Tarja Vermelha", false);
 INSERT INTO tb_categoria VALUES (2,"Tarja Preta", true);
