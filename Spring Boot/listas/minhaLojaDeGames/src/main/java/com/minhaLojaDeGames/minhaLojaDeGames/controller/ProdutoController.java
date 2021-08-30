@@ -49,9 +49,10 @@ public class ProdutoController {
 				.body(repository.save(produto));
 	}
 	
-	@PutMapping("/{id}")
+	@PutMapping
 	public ResponseEntity<Produto> putProduto (@RequestBody Produto produto){
-		return ResponseEntity.ok(repository.save(produto));
+		return ResponseEntity.status(HttpStatus.OK)
+				.body(repository.save(produto));
 	}
 	
 	@DeleteMapping("/{id}")
