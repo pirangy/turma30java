@@ -1,6 +1,5 @@
 package com.DrogaGen.DrogaGen.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,7 +21,7 @@ public class Produto {
 	@NotBlank
 	private String nome;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
 
