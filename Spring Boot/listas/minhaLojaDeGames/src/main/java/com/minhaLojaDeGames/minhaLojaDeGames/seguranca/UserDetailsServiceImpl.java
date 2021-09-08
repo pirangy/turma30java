@@ -1,9 +1,9 @@
-package org.generation.blogPessoal.seguranca;
+package com.minhaLojaDeGames.minhaLojaDeGames.seguranca;
 
 import java.util.Optional;
 
-import org.generation.blogPessoal.model.Usuario;
-import org.generation.blogPessoal.repository.UsuarioRepository;
+import com.minhaLojaDeGames.minhaLojaDeGames.model.Usuario;
+import com.minhaLojaDeGames.minhaLojaDeGames.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -20,8 +20,10 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	public UserDetails loadUserByUsername (String userName) throws UsernameNotFoundException {
 		
 		Optional<Usuario> user = userRepository.findByUsuario(userName);
-		user.orElseThrow(()-> new UsernameNotFoundException(userName + " not found."));
+		user.orElseThrow(()-> new UsernameNotFoundException(userName + "not found."));
 		
-		return user.map(UserDetailsImpl :: new).get(); 
+		return user.map(UserDetailsImpl :: new).get();
+		
 	}
+	
 }
