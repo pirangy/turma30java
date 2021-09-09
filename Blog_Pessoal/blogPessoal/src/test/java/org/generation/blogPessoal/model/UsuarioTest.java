@@ -1,6 +1,9 @@
 package org.generation.blogPessoal.model;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
+
 
 
 import java.time.LocalDate;
@@ -58,7 +61,7 @@ public class UsuarioTest {
 		
 		System.out.println(violacao.toString());
 		
-		assertTrue(violacao.isEmpty());	
+		assertFalse(violacao.isEmpty());	
 		
 	}
 	
